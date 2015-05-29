@@ -4,3 +4,5 @@ target/
 .project
 *.iml
 .idea/
+rjp-test.ipr
+rjp-test.iws
