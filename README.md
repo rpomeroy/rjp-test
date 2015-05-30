@@ -21,7 +21,7 @@ In the past I accomplished this by doing the following:
 
 * Using the [build-helper-maven-plugin](http://mojo.codehaus.org/build-helper-maven-plugin/) to parse the version into it's constituent parts
 * Using the [gmaven-plugin](http://docs.codehaus.org/display/GMAVEN/Executing+Groovy+Code) to script getting the git short hash and generating a timestamp and injecting it into the build.
-* Setting the <finalName> to an expression like the above
+* Setting the `<finalName>` to an expression like the above
 * ugg...
 
 This sorta worked but the packaged pom.properties was still getting the version from what was last stored in the pom.xml on the disk. This was solved with:
