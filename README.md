@@ -7,7 +7,7 @@ When implementing Jenkins CI builds for Maven projects we have a few goals:
 * The build pipeline configuration must be stored in version control - preferable with the project
 * Maven settings should be kept with the project - not relying on the user environment that Jenkins is running under
 * Maven build-specific JVM settings would be nice to store in the project also
-* *Would be even nicer if Maven had teh equivalent of gradlew so we could package the build system with the project - alas it's not a standard thing in the Maven world!*
+* *Would be even nicer if Maven had the equivalent of gradlew so we could package the build system with the project - alas it's not a standard thing in the Maven world!*
 
 In this project I'll attempt to bring all this together.
 
