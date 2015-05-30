@@ -34,7 +34,7 @@ Personally I think Maven should just bake in support for most of this. Lacking t
 
 * Use the [buildnumber-maven-plugin](buildnumber-maven-plugin) to get the git SHA1 hash (short version)
 * Use the [build-helper-maven-plugin](http://mojo.codehaus.org/build-helper-maven-plugin/) to parse the version into it's constituent parts as before
-* Set the <finalName> as before
+* Set the `<finalName>` as before
 * Enable filtering for `src/main/resources/`
 * Add a custom pom.properties with the following content in `src/main/resources/META-INF/maven/${groupId}/${artifactId}/`
 
