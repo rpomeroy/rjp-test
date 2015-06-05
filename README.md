@@ -46,7 +46,9 @@ artifactId=rjp-test
 ```
 
 and everything works as needed.  See the [pom.xml](pom.xml) for all the details
- 
+
+** Note to self - spring-boot provides git commit info out of the box - investigate
+
 ## Build Pipeline Configuration
 The Jenkins [workflow-plugin](https://github.com/jenkinsci/workflow-plugin) looks like the only good answer to this problem presently (and it looks pretty good).  
 
