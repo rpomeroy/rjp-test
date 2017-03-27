@@ -1,10 +1,15 @@
 pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                sh 'mvnw clean package'
-            }
-        }
+  agent {
+    docker {
+      image 'openjdk:8u121-jdk-alpine'
     }
+    
+  }
+  stages {
+    stage('build') {
+      steps {
+        sh 'mvnw clean package'
+      }
+    }
+  }
 }
