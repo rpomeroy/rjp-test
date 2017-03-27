@@ -1,11 +1,14 @@
 pipeline {
-  agent { docker: 'openjdk:8u121-jdk-alpine' }
+  agent {
+    docker: 'openjdk:8u121-jdk-alpine'
+  }
   stages {
     stage("Build") {
       steps {
         sh 'mvnw clean install -Dmaven.test.failure.ignore=true'
+      }
     }
-    stage("Archive"){
+    stage("Archive") {
       steps {
         archive "*/target/**/*"
         junit '*/target/surefire-reports/*.xml'
