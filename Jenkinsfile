@@ -1,12 +1,9 @@
 pipeline {
-  agent docker {
-    image: 'openjdk:8u121-jdk-alpine's
-  }
+  agent { docker: 'openjdk:8u121-jdk-alpine' }
   stages {
     stage("Build") {
       steps {
         sh 'mvnw clean install -Dmaven.test.failure.ignore=true'
-      }
     }
     stage("Archive"){
       steps {
